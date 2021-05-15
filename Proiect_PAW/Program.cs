@@ -16,7 +16,8 @@ namespace Proiect_PAW
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Verificare_date());
+            //Application.Run(new Verificare_date());
+            Application.Run(new Login_Angajat());
         }
     }
 }

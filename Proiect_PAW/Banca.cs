@@ -8,7 +8,7 @@ namespace Proiect_PAW
 {
     class Banca
     {
-        List<Clienti> listaClienti;
-        List<Aparat> listaAparate;
+        List<Clienti> listaClienti = new List<Clienti>();
+        List<Aparat> listaAparate = new List<Aparat>();
     }
 }
