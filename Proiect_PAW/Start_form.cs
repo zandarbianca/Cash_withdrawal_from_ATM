@@ -20,7 +20,14 @@ namespace Proiect_PAW
         private void btnAngajat_Click(object sender, EventArgs e)
         {
             Login_Angajat la = new Login_Angajat();
-            la.ShowDialog();
+            la.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Login_Clienti lc = new Login_Clienti();
+            lc.Show();
             this.Hide();
         }
     }

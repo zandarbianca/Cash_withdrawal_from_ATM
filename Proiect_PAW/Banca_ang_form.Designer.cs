@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 490);
+            this.ClientSize = new System.Drawing.Size(700, 571);
             this.Name = "Banca_ang_form";
             this.Text = "Banca_ang_form";
             this.ResumeLayout(false);

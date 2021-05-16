@@ -50,6 +50,7 @@
             this.tbParola.Location = new System.Drawing.Point(208, 351);
             this.tbParola.Multiline = true;
             this.tbParola.Name = "tbParola";
+            this.tbParola.PasswordChar = '*';
             this.tbParola.Size = new System.Drawing.Size(224, 30);
             this.tbParola.TabIndex = 1;
             // 
@@ -100,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(155)))), ((int)(((byte)(254)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(140)))), ((int)(((byte)(196)))));
             this.ClientSize = new System.Drawing.Size(490, 514);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLogareAng);

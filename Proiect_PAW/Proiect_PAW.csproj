@@ -76,6 +76,18 @@
       <DependentUpon>Banca_formular.cs</DependentUpon>
     </Compile>
     <Compile Include="Clienti.cs" />
+    <Compile Include="Client_ATM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client_ATM.Designer.cs">
+      <DependentUpon>Client_ATM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Clienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Clienti.Designer.cs">
+      <DependentUpon>Login_Clienti.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login_Angajat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +131,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Banca_formular.resx">
       <DependentUpon>Banca_formular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client_ATM.resx">
+      <DependentUpon>Client_ATM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Clienti.resx">
+      <DependentUpon>Login_Clienti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Angajat.resx">
       <DependentUpon>Login_Angajat.cs</DependentUpon>
@@ -178,6 +196,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DatabaseAngajati.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\man-512-cl1.png" />
+    <None Include="Resources\man-512-cl.png" />
     <None Include="Resources\man-512.png" />
     <None Include="Resources\atm-machine.png" />
     <None Include="Resources\man %284%29.png" />
