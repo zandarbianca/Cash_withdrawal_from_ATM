@@ -63,6 +63,12 @@
   <ItemGroup>
     <Compile Include="Aparat.cs" />
     <Compile Include="Banca.cs" />
+    <Compile Include="Banca_ang_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banca_ang_form.Designer.cs">
+      <DependentUpon>Banca_ang_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Banca_formular.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="Modifica_date.Designer.cs">
       <DependentUpon>Modifica_date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start_form.Designer.cs">
+      <DependentUpon>Start_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Verificare_date.cs">
       <SubType>Form</SubType>
@@ -102,6 +114,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Banca_ang_form.resx">
+      <DependentUpon>Banca_ang_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Banca_formular.resx">
       <DependentUpon>Banca_formular.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modifica_date.resx">
       <DependentUpon>Modifica_date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start_form.resx">
+      <DependentUpon>Start_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Verificare_date.resx">
       <DependentUpon>Verificare_date.cs</DependentUpon>
@@ -160,6 +178,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DatabaseAngajati.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\man-512.png" />
+    <None Include="Resources\atm-machine.png" />
+    <None Include="Resources\man %284%29.png" />
+    <None Include="Resources\man %283%29.png" />
+    <None Include="Resources\man %282%29.png" />
+    <None Include="Resources\man %281%29.png" />
+    <None Include="Resources\man.png" />
+    <None Include="Resources\ang-img-start.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
