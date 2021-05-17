@@ -61,13 +61,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aparat.cs" />
-    <Compile Include="Banca.cs" />
-    <Compile Include="Banca_ang_form.cs">
+    <Compile Include="Ang_ATM_bd_cl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Banca_ang_form.Designer.cs">
-      <DependentUpon>Banca_ang_form.cs</DependentUpon>
+    <Compile Include="Ang_ATM_bd_cl.Designer.cs">
+      <DependentUpon>Ang_ATM_bd_cl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aparat.cs" />
+    <Compile Include="Banca.cs" />
+    <Compile Include="Angajat_ATM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Angajat_ATM.Designer.cs">
+      <DependentUpon>Angajat_ATM.cs</DependentUpon>
     </Compile>
     <Compile Include="Banca_formular.cs">
       <SubType>Form</SubType>
@@ -81,6 +87,18 @@
     </Compile>
     <Compile Include="Client_ATM.Designer.cs">
       <DependentUpon>Client_ATM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extragere_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extragere_Form.Designer.cs">
+      <DependentUpon>Extragere_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informatii_cont_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informatii_cont_form.Designer.cs">
+      <DependentUpon>Informatii_cont_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Login_Clienti.cs">
       <SubType>Form</SubType>
@@ -106,34 +124,25 @@
     <Compile Include="Start_form.Designer.cs">
       <DependentUpon>Start_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Verificare_date.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Verificare_date.Designer.cs">
-      <DependentUpon>Verificare_date.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Clienti_formular.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Clienti_formular.Designer.cs">
-      <DependentUpon>Clienti_formular.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Efectuare_tranzactie.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Efectuare_tranzactie.Designer.cs">
-      <DependentUpon>Efectuare_tranzactie.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Banca_ang_form.resx">
-      <DependentUpon>Banca_ang_form.cs</DependentUpon>
+    <EmbeddedResource Include="Angajat_ATM.resx">
+      <DependentUpon>Angajat_ATM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ang_ATM_bd_cl.resx">
+      <DependentUpon>Ang_ATM_bd_cl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Banca_formular.resx">
       <DependentUpon>Banca_formular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client_ATM.resx">
       <DependentUpon>Client_ATM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extragere_Form.resx">
+      <DependentUpon>Extragere_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informatii_cont_form.resx">
+      <DependentUpon>Informatii_cont_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Clienti.resx">
       <DependentUpon>Login_Clienti.cs</DependentUpon>
@@ -146,15 +155,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Start_form.resx">
       <DependentUpon>Start_form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Verificare_date.resx">
-      <DependentUpon>Verificare_date.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Clienti_formular.resx">
-      <DependentUpon>Clienti_formular.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Efectuare_tranzactie.resx">
-      <DependentUpon>Efectuare_tranzactie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -196,6 +196,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DatabaseAngajati.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\teamwork.png" />
+    <None Include="Resources\greeting-512.png" />
     <None Include="Resources\man-512-cl1.png" />
     <None Include="Resources\man-512-cl.png" />
     <None Include="Resources\man-512.png" />

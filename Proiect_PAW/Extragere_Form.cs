@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace Proiect_PAW
 {
-    public partial class Efectuare_tranzactie : Form
+    public partial class Extragere_Form : Form
     {
-        public Efectuare_tranzactie()
+        public Extragere_Form()
         {
             InitializeComponent();
         }
+
+
     }
 }

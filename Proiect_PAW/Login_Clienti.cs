@@ -35,6 +35,9 @@ namespace Proiect_PAW
                 if (count == 1)
                 {
                     MessageBox.Show("V-ati logat cu succes!");
+                    Client_ATM ca = new Client_ATM();
+                    ca.Show();
+                    this.Hide();
                 }
                 else
                 {

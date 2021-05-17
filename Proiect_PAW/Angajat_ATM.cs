@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proiect_PAW
 {
-    public partial class Client_ATM : Form
+    public partial class Angajat_ATM : Form
     {
-        public Client_ATM()
+        public Angajat_ATM()
         {
             InitializeComponent();
         }
@@ -30,25 +30,9 @@ namespace Proiect_PAW
             childForm.BringToFront();
             childForm.Show();
         }
-        //Infromatii client
         private void button1_Click(object sender, EventArgs e)
         {
-            openChildForm(new Informatii_cont_form());
-        }
-        //Depunere numerar
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-        }
-        //Extragere numerar
-        private void button3_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Extragere_Form());
-        }
-        //Inchide
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            openChildForm(new Ang_ATM_bd_cl());
         }
     }
 }

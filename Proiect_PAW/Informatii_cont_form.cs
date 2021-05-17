@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proiect_PAW
 {
-    public partial class Banca_ang_form : Form
+    public partial class Informatii_cont_form : Form
     {
-        public Banca_ang_form()
+        public Informatii_cont_form()
         {
             InitializeComponent();
         }

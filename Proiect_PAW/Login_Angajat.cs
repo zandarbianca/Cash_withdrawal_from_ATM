@@ -38,6 +38,9 @@ namespace Proiect_PAW
                 if (count == 1)
                 {
                     MessageBox.Show("V-ati logat cu succes!");
+                    Angajat_ATM ca = new Angajat_ATM();
+                    ca.Show();
+                    this.Hide();
                 }
                 else
                 {

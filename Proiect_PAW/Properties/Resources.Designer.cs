@@ -83,6 +83,16 @@ namespace Proiect_PAW.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap greeting_512 {
+            get {
+                object obj = ResourceManager.GetObject("greeting-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login_img {
             get {
                 object obj = ResourceManager.GetObject("login-img", resourceCulture);
@@ -166,6 +176,16 @@ namespace Proiect_PAW.Properties {
         internal static System.Drawing.Bitmap man_512_cl1 {
             get {
                 object obj = ResourceManager.GetObject("man-512-cl1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teamwork {
+            get {
+                object obj = ResourceManager.GetObject("teamwork", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
