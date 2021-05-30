@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panelChildForm.SuspendLayout();
@@ -54,6 +54,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 514);
             this.panel1.TabIndex = 0;
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(12, 308);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(168, 83);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Tranzactii anterioare";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -106,16 +117,6 @@
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(670, 514);
             this.panelChildForm.TabIndex = 1;
-            // 
-            // button5
-            // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(12, 308);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(168, 83);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Tranzactii anterioare";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 

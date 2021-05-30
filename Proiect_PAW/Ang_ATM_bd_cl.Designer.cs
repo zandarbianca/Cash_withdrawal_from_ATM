@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.databaseAngajatiDataSet = new Proiect_PAW.DatabaseAngajatiDataSet();
+            this.angajatiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.angajatiTableAdapter = new Proiect_PAW.DatabaseAngajatiDataSetTableAdapters.AngajatiTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseAngajatiDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.angajatiBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -46,7 +55,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.userangDataGridViewTextBoxColumn,
+            this.passangDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.angajatiBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(38, 84);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -63,6 +78,44 @@
             this.button1.Text = "Serializare";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // databaseAngajatiDataSet
+            // 
+            this.databaseAngajatiDataSet.DataSetName = "DatabaseAngajatiDataSet";
+            this.databaseAngajatiDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // angajatiBindingSource
+            // 
+            this.angajatiBindingSource.DataMember = "Angajati";
+            this.angajatiBindingSource.DataSource = this.databaseAngajatiDataSet;
+            // 
+            // angajatiTableAdapter
+            // 
+            this.angajatiTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // userangDataGridViewTextBoxColumn
+            // 
+            this.userangDataGridViewTextBoxColumn.DataPropertyName = "User_ang";
+            this.userangDataGridViewTextBoxColumn.HeaderText = "User_ang";
+            this.userangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.userangDataGridViewTextBoxColumn.Name = "userangDataGridViewTextBoxColumn";
+            this.userangDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // passangDataGridViewTextBoxColumn
+            // 
+            this.passangDataGridViewTextBoxColumn.DataPropertyName = "Pass_ang";
+            this.passangDataGridViewTextBoxColumn.HeaderText = "Pass_ang";
+            this.passangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.passangDataGridViewTextBoxColumn.Name = "passangDataGridViewTextBoxColumn";
+            this.passangDataGridViewTextBoxColumn.Width = 125;
+            // 
             // Ang_ATM_bd_cl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -75,7 +128,10 @@
             this.Name = "Ang_ATM_bd_cl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ang_ATM_bd_cl";
+            this.Load += new System.EventHandler(this.Ang_ATM_bd_cl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseAngajatiDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.angajatiBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,5 +142,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
+        private DatabaseAngajatiDataSet databaseAngajatiDataSet;
+        private System.Windows.Forms.BindingSource angajatiBindingSource;
+        private DatabaseAngajatiDataSetTableAdapters.AngajatiTableAdapter angajatiTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userangDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passangDataGridViewTextBoxColumn;
     }
 }

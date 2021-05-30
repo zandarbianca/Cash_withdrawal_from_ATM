@@ -32,15 +32,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.tbBalanta = new System.Windows.Forms.TextBox();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.rbtn1 = new System.Windows.Forms.RadioButton();
+            this.rbtn2 = new System.Windows.Forms.RadioButton();
+            this.rbtn3 = new System.Windows.Forms.RadioButton();
+            this.btnEfectuare = new System.Windows.Forms.Button();
+            this.btnAnulare = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,93 +79,97 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Alegeti ATM-ul la care efectuati extragerea :";
             // 
-            // numericUpDown1
+            // numericUpDown
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(343, 287);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(211, 22);
-            this.numericUpDown1.TabIndex = 5;
+            this.numericUpDown.Location = new System.Drawing.Point(343, 287);
+            this.numericUpDown.Name = "numericUpDown";
+            this.numericUpDown.Size = new System.Drawing.Size(211, 22);
+            this.numericUpDown.TabIndex = 5;
             // 
-            // textBox1
+            // tbBalanta
             // 
-            this.textBox1.Location = new System.Drawing.Point(257, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(297, 22);
-            this.textBox1.TabIndex = 6;
+            this.tbBalanta.Enabled = false;
+            this.tbBalanta.Location = new System.Drawing.Point(257, 32);
+            this.tbBalanta.Name = "tbBalanta";
+            this.tbBalanta.Size = new System.Drawing.Size(297, 22);
+            this.tbBalanta.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(257, 101);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(297, 22);
-            this.dateTimePicker1.TabIndex = 9;
+            this.dateTimePicker.Location = new System.Drawing.Point(257, 101);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(297, 22);
+            this.dateTimePicker.TabIndex = 9;
             // 
-            // radioButton2
+            // rbtn1
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(397, 149);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(70, 21);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "ATM 1";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtn1.AutoSize = true;
+            this.rbtn1.Location = new System.Drawing.Point(397, 149);
+            this.rbtn1.Name = "rbtn1";
+            this.rbtn1.Size = new System.Drawing.Size(70, 21);
+            this.rbtn1.TabIndex = 10;
+            this.rbtn1.TabStop = true;
+            this.rbtn1.Text = "ATM 1";
+            this.rbtn1.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbtn2
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(397, 177);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(70, 21);
-            this.radioButton3.TabIndex = 11;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "ATM 2";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbtn2.AutoSize = true;
+            this.rbtn2.Location = new System.Drawing.Point(397, 177);
+            this.rbtn2.Name = "rbtn2";
+            this.rbtn2.Size = new System.Drawing.Size(70, 21);
+            this.rbtn2.TabIndex = 11;
+            this.rbtn2.TabStop = true;
+            this.rbtn2.Text = "ATM 2";
+            this.rbtn2.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rbtn3
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(397, 204);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(70, 21);
-            this.radioButton4.TabIndex = 12;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "ATM 3";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbtn3.AutoSize = true;
+            this.rbtn3.Location = new System.Drawing.Point(397, 204);
+            this.rbtn3.Name = "rbtn3";
+            this.rbtn3.Size = new System.Drawing.Size(70, 21);
+            this.rbtn3.TabIndex = 12;
+            this.rbtn3.TabStop = true;
+            this.rbtn3.Text = "ATM 3";
+            this.rbtn3.UseVisualStyleBackColor = true;
+            this.rbtn3.CheckedChanged += new System.EventHandler(this.rbtn3_CheckedChanged);
             // 
-            // button1
+            // btnEfectuare
             // 
-            this.button1.BackColor = System.Drawing.Color.Orange;
-            this.button1.Location = new System.Drawing.Point(91, 372);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 61);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Efectuati extragerea";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnEfectuare.BackColor = System.Drawing.Color.Orange;
+            this.btnEfectuare.Location = new System.Drawing.Point(91, 372);
+            this.btnEfectuare.Name = "btnEfectuare";
+            this.btnEfectuare.Size = new System.Drawing.Size(173, 61);
+            this.btnEfectuare.TabIndex = 13;
+            this.btnEfectuare.Text = "Efectuati extragerea";
+            this.btnEfectuare.UseVisualStyleBackColor = false;
+            this.btnEfectuare.Click += new System.EventHandler(this.btnEfectuare_Click);
             // 
-            // button2
+            // btnAnulare
             // 
-            this.button2.BackColor = System.Drawing.Color.Orange;
-            this.button2.Location = new System.Drawing.Point(366, 372);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 61);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Anulati";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAnulare.BackColor = System.Drawing.Color.Orange;
+            this.btnAnulare.Location = new System.Drawing.Point(366, 372);
+            this.btnAnulare.Name = "btnAnulare";
+            this.btnAnulare.Size = new System.Drawing.Size(173, 61);
+            this.btnAnulare.TabIndex = 14;
+            this.btnAnulare.Text = "Anulati";
+            this.btnAnulare.UseVisualStyleBackColor = false;
+            this.btnAnulare.Click += new System.EventHandler(this.btnAnulare_Click);
             // 
             // Extragere_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(647, 467);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.btnAnulare);
+            this.Controls.Add(this.btnEfectuare);
+            this.Controls.Add(this.rbtn3);
+            this.Controls.Add(this.rbtn2);
+            this.Controls.Add(this.rbtn1);
+            this.Controls.Add(this.dateTimePicker);
+            this.Controls.Add(this.tbBalanta);
+            this.Controls.Add(this.numericUpDown);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -173,7 +177,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Extragere_Form";
             this.Text = "Extragere_Form";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.Load += new System.EventHandler(this.Extragere_Form_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,13 +190,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.NumericUpDown numericUpDown;
+        private System.Windows.Forms.TextBox tbBalanta;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.RadioButton rbtn1;
+        private System.Windows.Forms.RadioButton rbtn2;
+        private System.Windows.Forms.RadioButton rbtn3;
+        private System.Windows.Forms.Button btnEfectuare;
+        private System.Windows.Forms.Button btnAnulare;
     }
 }

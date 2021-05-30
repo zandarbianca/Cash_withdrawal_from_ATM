@@ -16,5 +16,12 @@ namespace Proiect_PAW
         {
             InitializeComponent();
         }
+
+        private void Ang_ATM_bd_cl_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseAngajatiDataSet.Angajati' table. You can move, or remove it, as needed.
+            this.angajatiTableAdapter.Fill(this.databaseAngajatiDataSet.Angajati);
+
+        }
     }
 }

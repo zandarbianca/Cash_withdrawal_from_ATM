@@ -14,12 +14,12 @@ namespace Proiect_PAW
     public partial class Login_Clienti : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=clienti;Integrated Security=True");
-
+        int R;
         public Login_Clienti()
         {
             InitializeComponent();
         }
-
+        public static String NumeAcc;
         private void btnLogareCl_Click(object sender, EventArgs e)
         {
             try
@@ -34,8 +34,9 @@ namespace Proiect_PAW
                 int count = ds.Tables[0].Rows.Count;
                 if (count == 1)
                 {
+                    NumeAcc = tbNume.Text;
                     MessageBox.Show("V-ati logat cu succes!");
-                    Client_ATM ca = new Client_ATM();
+                    Client_ATM ca = new Client_ATM(R);
                     ca.Show();
                     this.Hide();
                 }
