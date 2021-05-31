@@ -96,6 +96,7 @@
             // 
             // dateTimePicker
             // 
+            this.dateTimePicker.Enabled = false;
             this.dateTimePicker.Location = new System.Drawing.Point(257, 101);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(297, 22);

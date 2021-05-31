@@ -6,9 +6,22 @@ using System.Threading.Tasks;
 
 namespace Proiect_PAW
 {
-    class Banca
+    public class Banca
     {
-        List<Clienti> listaClienti = new List<Clienti>();
-        List<Aparat> listaAparate = new List<Aparat>();
+        List<Aparat> listaAparate;
+
+        public Banca()
+        {
+            listaAparate = new List<Aparat>();
+            listaAparate.Add(new Aparat(1, "Alexandria, Str. Liberatii", "Functionala"));
+            listaAparate.Add(new Aparat(2, "Alexandria, Str. Renasterii", "Functionala"));
+            listaAparate.Add(new Aparat(3, "Alexandria, Str. 1 Mai", "Functionala"));
+        }
+
+
+
     }
+
+
+
 }

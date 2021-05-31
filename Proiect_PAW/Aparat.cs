@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Proiect_PAW
 {
-    class Aparat
+    public class Aparat
     {
         private int id;
         private string locatie;
-        private long suma;
+        private string stare;
 
-        Aparat() { id = 0; locatie = "Necunoscuta";  suma = 0; }
-        Aparat(int id_,string locatie_,long suma_)
+        public Aparat() { id = 0; locatie = "Necunoscuta"; stare = "Necunoscuta"; }
+        public Aparat(int id_,string locatie_,string stare_)
         {
             id = id_;
             locatie = locatie_;
-            suma = suma_;
+            stare = stare_;
         }
         public int Id
         {
@@ -29,10 +29,10 @@ namespace Proiect_PAW
             get { return locatie; }
             set { locatie = value; }
         }
-        public long Suma
+        public string Stare
         {
-            get { return suma; }
-            set { suma = value; }
+            get { return stare; }
+            set { stare = value; }
         }
     }
 }

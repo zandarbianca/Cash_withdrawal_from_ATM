@@ -58,5 +58,6 @@ namespace Proiect_PAW
             get { return adresa; }
             set { adresa = value; }
         }
+
     }
 }

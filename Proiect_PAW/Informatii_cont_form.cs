@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.IO;
 
 namespace Proiect_PAW
 {
     public partial class Informatii_cont_form : Form
     {
+        string path = @"C:\Users\Bianca\source\repos\Cash_withdrawal_from_ATM\InformatiiClient.txt";
         SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=clienti;Integrated Security=True");
         SqlDataAdapter da;
         DataSet ds;
@@ -21,7 +22,6 @@ namespace Proiect_PAW
         {
             InitializeComponent();
         }
-
         private void Informatii_cont_form_Load(object sender, EventArgs e)
         {
             da = new SqlDataAdapter("Select * From clienti", con);
@@ -44,32 +44,22 @@ namespace Proiect_PAW
             con.Close();
         }
 
-        private void tbNumeInfo_TextChanged(object sender, EventArgs e)
+        private void btnSerializareInfo_Click(object sender, EventArgs e)
         {
+            FileStream f = new FileStream("InformatiiClient.txt", FileMode.Create, FileAccess.Write);
+            StreamWriter x = new StreamWriter(f);
 
+            x.WriteLine(tbNumeInfo.ToString());
+            x.WriteLine(tbPrenumeInfo.ToString());
+            x.WriteLine(tbAdresaInfo.ToString());
+            x.WriteLine(tbIbanInfo.ToString());
+            x.WriteLine(tbSumaInfo.ToString());
+
+            x.Close();
+            f.Close();
+            MessageBox.Show("S-a creat fisierul!");
         }
 
-        private void tbPrenumeInfo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbAdresaInfo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbIbanInfo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbSumaInfo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-
+        
     }
 }

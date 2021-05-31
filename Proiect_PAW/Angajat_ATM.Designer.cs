@@ -56,41 +56,48 @@
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold);
             this.button4.Location = new System.Drawing.Point(12, 389);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(168, 83);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Inchide";
+            this.button4.Text = "INCHIDE";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold);
             this.button3.Location = new System.Drawing.Point(12, 234);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(168, 83);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Baza de date aparate";
+            this.button3.Text = "APARATE ATM";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(12, 132);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(168, 83);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Baza de date tranzactii";
+            this.button2.Text = "TRANZACTII";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(12, 32);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 83);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Baza de date clienti";
+            this.button1.Text = "CLIENTI";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

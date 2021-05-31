@@ -56,7 +56,7 @@ namespace Proiect_PAW
         //istoric tranzactii
         private void button5_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Istoric_tranzactii_Clienti());
         }
     }
 }

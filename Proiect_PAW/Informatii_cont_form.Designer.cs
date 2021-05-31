@@ -48,7 +48,6 @@
             this.tbNumeInfo.Name = "tbNumeInfo";
             this.tbNumeInfo.Size = new System.Drawing.Size(195, 22);
             this.tbNumeInfo.TabIndex = 0;
-            this.tbNumeInfo.TextChanged += new System.EventHandler(this.tbNumeInfo_TextChanged);
             // 
             // tbPrenumeInfo
             // 
@@ -57,7 +56,6 @@
             this.tbPrenumeInfo.Name = "tbPrenumeInfo";
             this.tbPrenumeInfo.Size = new System.Drawing.Size(195, 22);
             this.tbPrenumeInfo.TabIndex = 1;
-            this.tbPrenumeInfo.TextChanged += new System.EventHandler(this.tbPrenumeInfo_TextChanged);
             // 
             // tbIbanInfo
             // 
@@ -66,7 +64,6 @@
             this.tbIbanInfo.Name = "tbIbanInfo";
             this.tbIbanInfo.Size = new System.Drawing.Size(195, 22);
             this.tbIbanInfo.TabIndex = 2;
-            this.tbIbanInfo.TextChanged += new System.EventHandler(this.tbIbanInfo_TextChanged);
             // 
             // tbAdresaInfo
             // 
@@ -75,7 +72,6 @@
             this.tbAdresaInfo.Name = "tbAdresaInfo";
             this.tbAdresaInfo.Size = new System.Drawing.Size(195, 22);
             this.tbAdresaInfo.TabIndex = 4;
-            this.tbAdresaInfo.TextChanged += new System.EventHandler(this.tbAdresaInfo_TextChanged);
             // 
             // tbSumaInfo
             // 
@@ -84,7 +80,6 @@
             this.tbSumaInfo.Name = "tbSumaInfo";
             this.tbSumaInfo.Size = new System.Drawing.Size(195, 22);
             this.tbSumaInfo.TabIndex = 5;
-            this.tbSumaInfo.TextChanged += new System.EventHandler(this.tbSumaInfo_TextChanged);
             // 
             // label1
             // 
@@ -140,6 +135,7 @@
             this.btnSerializareInfo.TabIndex = 11;
             this.btnSerializareInfo.Text = "Serializare informatii";
             this.btnSerializareInfo.UseVisualStyleBackColor = false;
+            this.btnSerializareInfo.Click += new System.EventHandler(this.btnSerializareInfo_Click);
             // 
             // Informatii_cont_form
             // 
@@ -158,7 +154,6 @@
             this.Controls.Add(this.tbIbanInfo);
             this.Controls.Add(this.tbPrenumeInfo);
             this.Controls.Add(this.tbNumeInfo);
-            this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Informatii_cont_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

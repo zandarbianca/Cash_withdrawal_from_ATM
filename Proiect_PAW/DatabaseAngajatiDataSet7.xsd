@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatabaseAngajatiDataSet7" targetNamespace="http://tempuri.org/DatabaseAngajatiDataSet7.xsd" xmlns:mstns="http://tempuri.org/DatabaseAngajatiDataSet7.xsd" xmlns="http://tempuri.org/DatabaseAngajatiDataSet7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DatabaseAngajatiConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DatabaseAngajatiConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Proiect_PAW.Properties.Settings.GlobalReference.Default.DatabaseAngajatiConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Table_tranzactiiTableAdapter" GeneratorDataComponentClassName="Table_tranzactiiTableAdapter" Name="Table_tranzactii" UserDataComponentName="Table_tranzactiiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DatabaseAngajatiConnectionString (Settings)" DbObjectName="dbo.Table_tranzactii" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Data_tranzactie, Atm, Suma, Tip_tranzactie FROM dbo.Table_tranzactii</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Data_tranzactie" DataSetColumn="Data_tranzactie" />
+              <Mapping SourceColumn="Atm" DataSetColumn="Atm" />
+              <Mapping SourceColumn="Suma" DataSetColumn="Suma" />
+              <Mapping SourceColumn="Tip_tranzactie" DataSetColumn="Tip_tranzactie" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatabaseAngajatiDataSet7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DatabaseAngajatiDataSet7" msprop:Generator_UserDSName="DatabaseAngajatiDataSet7">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table_tranzactii" msprop:Generator_TableClassName="Table_tranzactiiDataTable" msprop:Generator_TableVarName="tableTable_tranzactii" msprop:Generator_TablePropName="Table_tranzactii" msprop:Generator_RowDeletingName="Table_tranzactiiRowDeleting" msprop:Generator_RowChangingName="Table_tranzactiiRowChanging" msprop:Generator_RowEvHandlerName="Table_tranzactiiRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_tranzactiiRowDeleted" msprop:Generator_UserTableName="Table_tranzactii" msprop:Generator_RowChangedName="Table_tranzactiiRowChanged" msprop:Generator_RowEvArgName="Table_tranzactiiRowChangeEvent" msprop:Generator_RowClassName="Table_tranzactiiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Data_tranzactie" msprop:Generator_ColumnVarNameInTable="columnData_tranzactie" msprop:Generator_ColumnPropNameInRow="Data_tranzactie" msprop:Generator_ColumnPropNameInTable="Data_tranzactieColumn" msprop:Generator_UserColumnName="Data_tranzactie" type="xs:dateTime" />
+              <xs:element name="Atm" msprop:Generator_ColumnVarNameInTable="columnAtm" msprop:Generator_ColumnPropNameInRow="Atm" msprop:Generator_ColumnPropNameInTable="AtmColumn" msprop:Generator_UserColumnName="Atm" type="xs:int" />
+              <xs:element name="Suma" msprop:Generator_ColumnVarNameInTable="columnSuma" msprop:Generator_ColumnPropNameInRow="Suma" msprop:Generator_ColumnPropNameInTable="SumaColumn" msprop:Generator_UserColumnName="Suma" type="xs:int" minOccurs="0" />
+              <xs:element name="Tip_tranzactie" msprop:Generator_ColumnVarNameInTable="columnTip_tranzactie" msprop:Generator_ColumnPropNameInRow="Tip_tranzactie" msprop:Generator_ColumnPropNameInTable="Tip_tranzactieColumn" msprop:Generator_UserColumnName="Tip_tranzactie">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

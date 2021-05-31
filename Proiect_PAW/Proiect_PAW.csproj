@@ -68,6 +68,12 @@
       <DependentUpon>Ang_ATM_bd_cl.cs</DependentUpon>
     </Compile>
     <Compile Include="Aparat.cs" />
+    <Compile Include="Aparate_ATM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aparate_ATM.Designer.cs">
+      <DependentUpon>Aparate_ATM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Banca.cs" />
     <Compile Include="Angajat_ATM.cs">
       <SubType>Form</SubType>
@@ -81,6 +87,12 @@
     <Compile Include="Banca_formular.Designer.cs">
       <DependentUpon>Banca_formular.cs</DependentUpon>
     </Compile>
+    <Compile Include="Baza_date_tranzactii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Baza_date_tranzactii.Designer.cs">
+      <DependentUpon>Baza_date_tranzactii.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clienti.cs" />
     <Compile Include="Client_ATM.cs">
       <SubType>Form</SubType>
@@ -93,6 +105,51 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseAngajatiDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseAngajatiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseAngajatiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseAngajatiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseAngajatiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseAngajatiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseAngajatiDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseAngajatiDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseAngajatiDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseAngajatiDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseAngajatiDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseAngajatiDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseAngajatiDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseAngajatiDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseAngajatiDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseAngajatiDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseAngajatiDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseAngajatiDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseAngajatiDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Extragere_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +161,12 @@
     </Compile>
     <Compile Include="Informatii_cont_form.Designer.cs">
       <DependentUpon>Informatii_cont_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Istoric_tranzactii_Clienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Istoric_tranzactii_Clienti.Designer.cs">
+      <DependentUpon>Istoric_tranzactii_Clienti.cs</DependentUpon>
     </Compile>
     <Compile Include="Login_Clienti.cs">
       <SubType>Form</SubType>
@@ -137,8 +200,14 @@
     <EmbeddedResource Include="Ang_ATM_bd_cl.resx">
       <DependentUpon>Ang_ATM_bd_cl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Aparate_ATM.resx">
+      <DependentUpon>Aparate_ATM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Banca_formular.resx">
       <DependentUpon>Banca_formular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Baza_date_tranzactii.resx">
+      <DependentUpon>Baza_date_tranzactii.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client_ATM.resx">
       <DependentUpon>Client_ATM.cs</DependentUpon>
@@ -148,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Informatii_cont_form.resx">
       <DependentUpon>Informatii_cont_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Istoric_tranzactii_Clienti.resx">
+      <DependentUpon>Istoric_tranzactii_Clienti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Clienti.resx">
       <DependentUpon>Login_Clienti.cs</DependentUpon>
@@ -181,6 +253,105 @@
     </None>
     <None Include="DatabaseAngajatiDataSet.xss">
       <DependentUpon>DatabaseAngajatiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet1.xsc">
+      <DependentUpon>DatabaseAngajatiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseAngajatiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseAngajatiDataSet1.xss">
+      <DependentUpon>DatabaseAngajatiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet2.xsc">
+      <DependentUpon>DatabaseAngajatiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseAngajatiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseAngajatiDataSet2.xss">
+      <DependentUpon>DatabaseAngajatiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet3.xsc">
+      <DependentUpon>DatabaseAngajatiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseAngajatiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseAngajatiDataSet3.xss">
+      <DependentUpon>DatabaseAngajatiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet4.xsc">
+      <DependentUpon>DatabaseAngajatiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseAngajatiDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseAngajatiDataSet4.xss">
+      <DependentUpon>DatabaseAngajatiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet5.xsc">
+      <DependentUpon>DatabaseAngajatiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseAngajatiDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseAngajatiDataSet5.xss">
+      <DependentUpon>DatabaseAngajatiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet6.xsc">
+      <DependentUpon>DatabaseAngajatiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseAngajatiDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseAngajatiDataSet6.xss">
+      <DependentUpon>DatabaseAngajatiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet7.xsc">
+      <DependentUpon>DatabaseAngajatiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseAngajatiDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseAngajatiDataSet7.xss">
+      <DependentUpon>DatabaseAngajatiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet8.xsc">
+      <DependentUpon>DatabaseAngajatiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseAngajatiDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseAngajatiDataSet8.xss">
+      <DependentUpon>DatabaseAngajatiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet9.xsc">
+      <DependentUpon>DatabaseAngajatiDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseAngajatiDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseAngajatiDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseAngajatiDataSet9.xss">
+      <DependentUpon>DatabaseAngajatiDataSet9.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -236,6 +407,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

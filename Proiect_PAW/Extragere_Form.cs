@@ -31,7 +31,7 @@ namespace Proiect_PAW
         //golire texboxuri
         private void golire()
         {
-            tbBalanta.Clear();
+            
             rbtn1.Checked = false;
             rbtn2.Checked = false;
             rbtn3.Checked = false;
@@ -41,7 +41,33 @@ namespace Proiect_PAW
         //inserare tranzactii
         private void inserare_tr()
         {
+            // Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =| DataDirectory |\DatabaseAngajati.mdf; Integrated Security = True
+            SqlConnection conec = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=tranzactii;Integrated Security=True");
             
+
+            try
+            {
+                conec.Open();
+                string atm;
+                if (rbtn1.Checked)
+                {
+                    atm = "1";
+                }else if (rbtn2.Checked)
+                {
+                    atm = "2";
+                }else atm = "3";
+
+                SqlCommand command = new SqlCommand("insert into Tranzactii_ist (Tip_tranzactie,Atm,Suma,Data_tranzactie,nume_cl) values ('Extragere','" + 
+                     atm + "','" + numericUpDown.Value + "','" +  dateTimePicker.Text + "','" + Login_Clienti.NumeAcc + "')", conec);
+                command.ExecuteNonQuery();
+                conec.Close();
+                MessageBox.Show("tranzactia a fost inregsitrata in bd");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        
         }
         //Efectuare tranzactie
         private void btnEfectuare_Click(object sender, EventArgs e)
@@ -64,6 +90,7 @@ namespace Proiect_PAW
                 MessageBox.Show("Tranzactia s-a efectuat cu succes!");
                 con.Close();
             }
+            inserare_tr();
             golire();
         }
         //Anulare tranzactie
