@@ -89,9 +89,11 @@ namespace Proiect_PAW
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Tranzactia s-a efectuat cu succes!");
                 con.Close();
+                inserare_tr();
+                golire();
             }
-            inserare_tr();
-            golire();
+            
+            
         }
         //Anulare tranzactie
         private void btnAnulare_Click(object sender, EventArgs e)
@@ -102,6 +104,22 @@ namespace Proiect_PAW
         private void rbtn3_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void numericUpDown_Validated(object sender, EventArgs e)
+        {
+            errorProvider1.Clear();
+        }
+
+        private void numericUpDown_Validating(object sender, CancelEventArgs e)
+        {
+            int suma = (int)numericUpDown.Value;
+
+            if (suma < 10)
+            {
+                errorProvider1.SetError((Control)sender, "Suma trebuie să fie mai mare de 10!");
+                e.Cancel = true;
+            }
         }
     }
 }

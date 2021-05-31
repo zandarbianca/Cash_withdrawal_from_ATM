@@ -401,6 +401,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DatabaseAngajati.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\back-button.png" />
     <None Include="Resources\teamwork.png" />
     <None Include="Resources\greeting-512.png" />
     <None Include="Resources\man-512-cl1.png" />

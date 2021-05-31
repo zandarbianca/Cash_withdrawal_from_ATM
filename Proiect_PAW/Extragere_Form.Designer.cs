@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,7 +41,9 @@
             this.rbtn3 = new System.Windows.Forms.RadioButton();
             this.btnEfectuare = new System.Windows.Forms.Button();
             this.btnAnulare = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,6 +88,8 @@
             this.numericUpDown.Name = "numericUpDown";
             this.numericUpDown.Size = new System.Drawing.Size(211, 22);
             this.numericUpDown.TabIndex = 5;
+            this.numericUpDown.Validating += new System.ComponentModel.CancelEventHandler(this.numericUpDown_Validating);
+            this.numericUpDown.Validated += new System.EventHandler(this.numericUpDown_Validated);
             // 
             // tbBalanta
             // 
@@ -158,6 +163,10 @@
             this.btnAnulare.UseVisualStyleBackColor = false;
             this.btnAnulare.Click += new System.EventHandler(this.btnAnulare_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Extragere_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -180,6 +189,7 @@
             this.Text = "Extragere_Form";
             this.Load += new System.EventHandler(this.Extragere_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,5 +209,6 @@
         private System.Windows.Forms.RadioButton rbtn3;
         private System.Windows.Forms.Button btnEfectuare;
         private System.Windows.Forms.Button btnAnulare;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

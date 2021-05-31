@@ -31,7 +31,6 @@ namespace Proiect_PAW
         }
         private void golire()
         {
-
             rbtn1.Checked = false;
             rbtn2.Checked = false;
             rbtn3.Checked = false;
@@ -40,10 +39,7 @@ namespace Proiect_PAW
         }
         private void inserare_tr()
         {
-            // Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =| DataDirectory |\DatabaseAngajati.mdf; Integrated Security = True
             SqlConnection conec = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=tranzactii;Integrated Security=True");
-
-
             try
             {
                 conec.Open();
@@ -81,23 +77,42 @@ namespace Proiect_PAW
             con.Close();
             int.TryParse(tbBalanta.Text, out int balanta);
             int suma_noua = 0;
-            if (numericUpDown.Value > balanta || numericUpDown.Value < 0) MessageBox.Show("Balanta nu poate fi negativa!");
+            if ((rbtn1.Checked == false) && (rbtn2.Checked == false) && (rbtn3.Checked == false)) MessageBox.Show("Alegeti ATM-ul la care va aflati in acest moment!");
             else
             {
-                con.Open();
-                suma_noua = balanta + (int)numericUpDown.Value;
-                SqlCommand cmd = new SqlCommand("update clienti set Suma_cl=" + suma_noua + " where User_cl='" + Login_Clienti.NumeAcc + "'", con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Tranzactia s-a efectuat cu succes!");
-                con.Close();
+                if (numericUpDown.Value > balanta || numericUpDown.Value < 0) MessageBox.Show("Balanta nu poate fi negativa!");
+                else
+                {
+                    con.Open();
+                    suma_noua = balanta + (int)numericUpDown.Value;
+                    SqlCommand cmd = new SqlCommand("update clienti set Suma_cl=" + suma_noua + " where User_cl='" + Login_Clienti.NumeAcc + "'", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Tranzactia s-a efectuat cu succes!");
+                    con.Close();
+                }
+                inserare_tr();
+                golire();
             }
-            inserare_tr();
-            golire();
         }
 
         private void btnAnulare_Click_1(object sender, EventArgs e)
         {
             golire();
+        }
+
+        private void numericUpDown_Validated(object sender, EventArgs e)
+        {
+            errorProvider1.Clear();
+        }
+
+        private void numericUpDown_Validating(object sender, CancelEventArgs e)
+        {
+            int suma = (int)numericUpDown.Value;
+            if (suma < 10 )
+            {
+                errorProvider1.SetError((Control)sender, "Suma trebuie să fie mai mare de 10!");
+                e.Cancel = true;
+            }
         }
     }
 }
