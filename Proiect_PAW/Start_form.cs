@@ -30,5 +30,17 @@ namespace Proiect_PAW
             lc.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Client_nou cn = new Client_nou();
+            cn.Show();
+            this.Hide();
+        }
+
+        private void Start_form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
