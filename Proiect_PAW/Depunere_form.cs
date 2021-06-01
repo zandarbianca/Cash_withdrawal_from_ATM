@@ -80,7 +80,7 @@ namespace Proiect_PAW
             if ((rbtn1.Checked == false) && (rbtn2.Checked == false) && (rbtn3.Checked == false)) MessageBox.Show("Alegeti ATM-ul la care va aflati in acest moment!");
             else
             {
-                if (numericUpDown.Value > balanta || numericUpDown.Value < 0) MessageBox.Show("Balanta nu poate fi negativa!");
+                if (numericUpDown.Value < 0) MessageBox.Show("Suma intrdusa nu poate fi negativa!");
                 else
                 {
                     con.Open();

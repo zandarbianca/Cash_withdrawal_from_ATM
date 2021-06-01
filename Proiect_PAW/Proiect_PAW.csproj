@@ -81,12 +81,6 @@
     <Compile Include="Angajat_ATM.Designer.cs">
       <DependentUpon>Angajat_ATM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Banca_formular.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Banca_formular.Designer.cs">
-      <DependentUpon>Banca_formular.cs</DependentUpon>
-    </Compile>
     <Compile Include="Baza_date_tranzactii.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,12 +186,6 @@
     <Compile Include="Login_Angajat.Designer.cs">
       <DependentUpon>Login_Angajat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modifica_date.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modifica_date.Designer.cs">
-      <DependentUpon>Modifica_date.cs</DependentUpon>
-    </Compile>
     <Compile Include="Start_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,9 +202,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Aparate_ATM.resx">
       <DependentUpon>Aparate_ATM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Banca_formular.resx">
-      <DependentUpon>Banca_formular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Baza_date_tranzactii.resx">
       <DependentUpon>Baza_date_tranzactii.cs</DependentUpon>
@@ -244,9 +229,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Angajat.resx">
       <DependentUpon>Login_Angajat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modifica_date.resx">
-      <DependentUpon>Modifica_date.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Start_form.resx">
       <DependentUpon>Start_form.cs</DependentUpon>
