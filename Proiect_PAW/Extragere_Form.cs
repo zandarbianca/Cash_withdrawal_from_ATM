@@ -80,19 +80,23 @@ namespace Proiect_PAW
             con.Close();
             int.TryParse(tbBalanta.Text, out int balanta);
             int suma_noua = 0;
-            if (numericUpDown.Value > balanta || numericUpDown.Value < 0) MessageBox.Show("Balanta nu poate fi negativa!");
+
+            if ((rbtn1.Checked == false) && (rbtn2.Checked == false) && (rbtn3.Checked == false)) MessageBox.Show("Alegeti ATM-ul la care va aflati in acest moment!");
             else
             {
-                con.Open();
-                suma_noua = balanta - (int)numericUpDown.Value;
-                SqlCommand cmd = new SqlCommand("update clienti set Suma_cl=" + suma_noua + " where User_cl='" + Login_Clienti.NumeAcc + "'", con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Tranzactia s-a efectuat cu succes!");
-                con.Close();
-                inserare_tr();
-                golire();
+                if (numericUpDown.Value > balanta || numericUpDown.Value < 0) MessageBox.Show("Balanta nu poate fi negativa!");
+                else
+                {
+                    con.Open();
+                    suma_noua = balanta - (int)numericUpDown.Value;
+                    SqlCommand cmd = new SqlCommand("update clienti set Suma_cl=" + suma_noua + " where User_cl='" + Login_Clienti.NumeAcc + "'", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Tranzactia s-a efectuat cu succes!");
+                    con.Close();
+                    inserare_tr();
+                    golire();
+                }
             }
-            
             
         }
         //Anulare tranzactie
@@ -101,10 +105,7 @@ namespace Proiect_PAW
             golire();
         }
 
-        private void rbtn3_CheckedChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void numericUpDown_Validated(object sender, EventArgs e)
         {

@@ -139,7 +139,6 @@
             this.rbtn3.TabStop = true;
             this.rbtn3.Text = "ATM 3";
             this.rbtn3.UseVisualStyleBackColor = true;
-            this.rbtn3.CheckedChanged += new System.EventHandler(this.rbtn3_CheckedChanged);
             // 
             // btnEfectuare
             // 

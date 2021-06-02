@@ -221,6 +221,7 @@ namespace Proiect_PAW
                 if (String.Compare(tbUser.Text, r[6].ToString().Trim()) == 0)
                 {
                     ok = false;
+                    break;
                 }
                 else ok = true;
             }

@@ -34,5 +34,12 @@ namespace Proiect_PAW
             get { return stare; }
             set { stare = value; }
         }
+        public override string ToString()
+        {
+            return "Id: " + id + "  Locatie: " + locatie + "  Stare: " + stare;
+        }
+
+
+
     }
 }
