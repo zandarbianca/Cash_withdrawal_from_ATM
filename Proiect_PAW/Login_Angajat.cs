@@ -14,15 +14,11 @@ namespace Proiect_PAW
 {
     public partial class Login_Angajat : Form
     {
-        //string path = @"Data Source=DESKTOP_ANG;Initial Catalog=angajati;Integrated Security=True";
         SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=angajati;Integrated Security=True");
-
         public Login_Angajat()
         {
             InitializeComponent();
-            //con = new SqlConnection(path);
         }
-
         private void btnLogareAng_Click(object sender, EventArgs e)
         {
             try
@@ -52,11 +48,6 @@ namespace Proiect_PAW
                 MessageBox.Show(ex.Message);
             }
                 
-        }
-
-        private void Login_Angajat_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

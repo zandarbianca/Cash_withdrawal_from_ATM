@@ -14,7 +14,6 @@ namespace Proiect_PAW
         private long iban;
         private int suma;
         private string adresa;
-
         public Clienti()
         {
             nume = "necunoscut"; prenume = "necunoscut"; iban = 0; adresa = "-"; suma = 0;
@@ -58,6 +57,5 @@ namespace Proiect_PAW
             get { return adresa; }
             set { adresa = value; }
         }
-
     }
 }

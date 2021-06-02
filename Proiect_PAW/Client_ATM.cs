@@ -13,11 +13,9 @@ namespace Proiect_PAW
 {
     public partial class Client_ATM : Form
     {
-       
         public Client_ATM(int x)
         {
-            InitializeComponent();
-            
+            InitializeComponent(); 
         }
         private Form activeForm = null;
         private void openChildForm(Form childForm)

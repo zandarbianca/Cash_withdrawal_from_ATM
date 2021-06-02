@@ -14,23 +14,17 @@ namespace Proiect_PAW
     public partial class Istoric_tranzactii_Clienti : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=tranzactii;Integrated Security=True");
-        //SqlCommand cmd = new SqlCommand("select * from Clienti where User_cl=@name and Pass_cl=@pass ", con);
         DataTable dt;
         SqlDataAdapter adpt1;
-            //= new SqlDataAdapter("select * from clienti where User_cl='" + Login_Clienti.NumeAcc + "'", con);
         public Istoric_tranzactii_Clienti()
         {
             InitializeComponent();
-
         }
 
         private void Istoric_tranzactii_Clienti_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'databaseAngajatiDataSet7.Table_tranzactii' table. You can move, or remove it, as needed.
-            // this.table_tranzactiiTableAdapter5.Fill(this.databaseAngajatiDataSet7.Table_tranzactii);
             display();
         }
-
         public void display()
         {
             try
@@ -46,11 +40,6 @@ namespace Proiect_PAW
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

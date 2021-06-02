@@ -11,7 +11,6 @@ namespace Proiect_PAW
         private int id;
         private string locatie;
         private string stare;
-
         public Aparat() { id = 0; locatie = "Necunoscuta"; stare = "Necunoscuta"; }
         public Aparat(int id_,string locatie_,string stare_)
         {
@@ -38,8 +37,5 @@ namespace Proiect_PAW
         {
             return "Id: " + id + "  Locatie: " + locatie + "  Stare: " + stare;
         }
-
-
-
     }
 }

@@ -9,7 +9,6 @@ namespace Proiect_PAW
     public class Banca
     {
         List<Aparat> listaAparate;
-
         public Banca()
         {
             listaAparate = new List<Aparat>();
@@ -17,11 +16,5 @@ namespace Proiect_PAW
             listaAparate.Add(new Aparat(2, "Alexandria, Str. Renasterii", "Functionala"));
             listaAparate.Add(new Aparat(3, "Alexandria, Str. 1 Mai", "Functionala"));
         }
-
-
-
     }
-
-
-
 }

@@ -14,7 +14,6 @@ namespace Proiect_PAW
     public partial class Depunere_form : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=clienti;Integrated Security=True");
-
         public Depunere_form()
         {
             InitializeComponent();

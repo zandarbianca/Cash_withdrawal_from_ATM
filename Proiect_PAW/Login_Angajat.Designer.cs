@@ -112,7 +112,6 @@
             this.Name = "Login_Angajat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login_Angajat";
-            this.Load += new System.EventHandler(this.Login_Angajat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

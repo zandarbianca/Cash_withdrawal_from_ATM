@@ -43,7 +43,6 @@ namespace Proiect_PAW
             tbSumaInfo.Text = dt.Rows[0][4].ToString();
             con.Close();
         }
-
         private void btnSerializareInfo_Click(object sender, EventArgs e)
         {
             FileStream f = new FileStream("InformatiiClient.txt", FileMode.Create, FileAccess.Write);
@@ -59,7 +58,5 @@ namespace Proiect_PAW
             f.Close();
             MessageBox.Show("S-a creat fisierul!");
         }
-
-        
     }
 }

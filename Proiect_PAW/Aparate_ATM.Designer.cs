@@ -99,7 +99,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Aparate_ATM";
             this.Text = "Aparate_ATM";
-            this.Load += new System.EventHandler(this.Aparate_ATM_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

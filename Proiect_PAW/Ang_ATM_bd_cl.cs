@@ -14,7 +14,6 @@ namespace Proiect_PAW
     public partial class Ang_ATM_bd_cl : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=clienti;Integrated Security=True");
-        //SqlCommand cmd = new SqlCommand("select * from Clienti where User_cl=@name and Pass_cl=@pass ", con);
         DataTable dt;
         SqlDataAdapter adpt1;
         public Ang_ATM_bd_cl()
@@ -48,9 +47,5 @@ namespace Proiect_PAW
             display();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

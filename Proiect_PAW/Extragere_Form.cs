@@ -41,10 +41,7 @@ namespace Proiect_PAW
         //inserare tranzactii
         private void inserare_tr()
         {
-            // Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =| DataDirectory |\DatabaseAngajati.mdf; Integrated Security = True
             SqlConnection conec = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=tranzactii;Integrated Security=True");
-            
-
             try
             {
                 conec.Open();
@@ -56,7 +53,6 @@ namespace Proiect_PAW
                 {
                     atm = "2";
                 }else atm = "3";
-
                 SqlCommand command = new SqlCommand("insert into Tranzactii_ist (Tip_tranzactie,Atm,Suma,Data_tranzactie,nume_cl) values ('Extragere','" + 
                      atm + "','" + numericUpDown.Value + "','" +  dateTimePicker.Text + "','" + Login_Clienti.NumeAcc + "')", conec);
                 command.ExecuteNonQuery();
@@ -67,7 +63,6 @@ namespace Proiect_PAW
             {
                 MessageBox.Show(ex.Message);
             }
-        
         }
         //Efectuare tranzactie
         private void btnEfectuare_Click(object sender, EventArgs e)
@@ -80,7 +75,6 @@ namespace Proiect_PAW
             con.Close();
             int.TryParse(tbBalanta.Text, out int balanta);
             int suma_noua = 0;
-
             if ((rbtn1.Checked == false) && (rbtn2.Checked == false) && (rbtn3.Checked == false)) MessageBox.Show("Alegeti ATM-ul la care va aflati in acest moment!");
             else
             {
@@ -97,21 +91,16 @@ namespace Proiect_PAW
                     golire();
                 }
             }
-            
         }
         //Anulare tranzactie
         private void btnAnulare_Click(object sender, EventArgs e)
         {
             golire();
         }
-
-
-
         private void numericUpDown_Validated(object sender, EventArgs e)
         {
             errorProvider1.Clear();
         }
-
         private void numericUpDown_Validating(object sender, CancelEventArgs e)
         {
             int suma = (int)numericUpDown.Value;

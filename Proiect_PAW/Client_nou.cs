@@ -64,8 +64,7 @@ namespace Proiect_PAW
             {
                 btnVerificare.Enabled = true;
             }
-
-            }
+        }
         //butoane pannel jos
         private void button1_Click(object sender, EventArgs e)
         {
@@ -75,8 +74,6 @@ namespace Proiect_PAW
             btnSalvare1.Enabled = false;
             btnSalvare2.Enabled = false;
         }
-
-       // /////////////////////////////////////////////////// //
         private void Client_nou_Load(object sender, EventArgs e)
         {
             btnCreare.Enabled = btnVerificare.Enabled = false;
@@ -206,7 +203,6 @@ namespace Proiect_PAW
                 e.Cancel = true;
             }
         }
-
         public bool select()
         {
             SqlConnection c = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=clienti;Integrated Security=True");
@@ -214,7 +210,6 @@ namespace Proiect_PAW
             string select = "select * from Clienti";
             SqlCommand cmd = new SqlCommand(select, c);
             SqlDataReader r = cmd.ExecuteReader();
-          
             bool ok = true;
             while (r.Read())
             {

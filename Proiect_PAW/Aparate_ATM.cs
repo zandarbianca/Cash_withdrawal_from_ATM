@@ -34,11 +34,6 @@ namespace Proiect_PAW
                 lv.Items.Add(item);
             }
         }
-        private void Aparate_ATM_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             FileStream f = new FileStream("FisierAparate.txt", FileMode.Create, FileAccess.Write);
